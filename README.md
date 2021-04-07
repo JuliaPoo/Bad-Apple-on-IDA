@@ -32,7 +32,7 @@ jmp next_block
 
 Furthermore, at the first ever block (before the jump table), there's an `int 3` instruction that breaks the debugger (to signify a frame), and instructions that zero out `edi`, `esi` and `eax`. Control flow through the image hence goes to the first case/column, and executes without error.
 
-I essentially rewrote the displaying parts of _REpsych_ in _C_ because I have (unfounded) personal grudges towards _nasm_.
+I essentially rewrote the displaying parts of _REpsych_ in _C_ because I have (unfounded) personal grudges towards _nasm_. Btw, a big reason for using msvc is bcuz gcc inline asm syntax _suck_. That is all.
 
 ### Changing Pixel Brightness
 
